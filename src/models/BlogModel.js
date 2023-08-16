@@ -10,7 +10,13 @@ const blogSchema = new mongoose.Schema({
     },
     img : {
         type: String,
+    },
+
+    comments: {
+        type: String,
     }
+
+
 
 },
     { timestamps: true, versionKey: false } )

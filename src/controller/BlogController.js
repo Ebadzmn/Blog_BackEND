@@ -1,6 +1,7 @@
 const BlogModel = require ("../models/BlogModel.js")
 
 exports.createBlog = async (req, res) => {
+
     try {
         const blog = await BlogModel.create(req.body);
         res.status(200).json({
@@ -51,6 +52,8 @@ exports.getBlogById = async (req, res) => {
         })
     }
 }
+
+
 
 
 exports.updateBlog = async (req, res) => {
